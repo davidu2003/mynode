@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm init -y)",
+      "Bash(go mod init:*)",
+      "Bash(npm install:*)",
+      "Bash(npm install -D typescript @types/node @types/better-sqlite3 @types/ssh2 @types/bcryptjs @types/uuid @types/nodemailer tsx drizzle-kit)",
+      "Bash(go get:*)",
+      "Bash(go mod tidy:*)",
+      "Bash(go build:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npm create vite:*)",
+      "Bash(sqlite3:*)",
+      "Bash(npm run build)",
+      "Bash(tree:*)",
+      "Bash(ln:*)",
+      "Bash(npm run db:generate:*)",
+      "Bash(npm run db:migrate:*)",
+      "Bash(curl:*)"
+    ]
+  }
+}
