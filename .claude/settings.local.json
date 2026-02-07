@@ -16,7 +16,12 @@
       "Bash(ln:*)",
       "Bash(npm run db:generate:*)",
       "Bash(npm run db:migrate:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\ndocs: 添加项目 README 文档\n\n添加完整的项目 README，包含：\n- 核心特性说明\n- 系统架构图和技术栈\n- 项目结构说明\n- 快速开始指南\n- 核心功能模块清单\n- 开发规范和 Git 提交规范\n- 文档索引和开发路线图\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
     ]
   }
 }

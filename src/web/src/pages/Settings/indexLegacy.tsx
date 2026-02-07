@@ -49,8 +49,8 @@ function NotifySettings() {
     try {
       await notifyApi.updateEmail(values);
       message.success('邮件配置保存成功');
-    } catch (err) {
-      message.error('保存失败');
+    } catch (err: unknown) {
+      message.error(getErrorMessage(err, '保存失败'));
     } finally {
       setEmailLoading(false);
     }
@@ -61,8 +61,8 @@ function NotifySettings() {
     try {
       await notifyApi.updateTelegram(values);
       message.success('Telegram配置保存成功');
-    } catch (err) {
-      message.error('保存失败');
+    } catch (err: unknown) {
+      message.error(getErrorMessage(err, '保存失败'));
     } finally {
       setTelegramLoading(false);
     }

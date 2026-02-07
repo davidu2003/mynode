@@ -20,7 +20,7 @@ const queryClient = new QueryClient({
 
 const basePath = import.meta.env.VITE_BASE_PATH || '';
 
-function AppWrapper() {
+export function AppWrapper() {
   const { isDark } = useThemeStore();
 
   useEffect(() => {
